@@ -1,0 +1,47 @@
+.home_container {
+    background-image: url('../../../public/media/img/fondotrivia.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5% 0 15%;
+    height: 100vh;
+}
+.menu_container {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 15%;
+}
+.menu_item {
+    display: flex;
+    width: 100%;
+    border: solid 1px #000;
+    border-radius: 2rem;
+    background-color: #84d2fc;
+    overflow: hidden;
+    margin: 10px 0;
+    min-width: 250px;
+    cursor: pointer;
+}
+.menu_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5% 2rem;
+    border-radius: 2rem;
+    border: solid 3px rgb(255, 255, 255);    
+    background: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 24px;
+    
+}

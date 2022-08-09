@@ -1,0 +1,13 @@
+.score_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #fdf7f9;
+    border: solid .5px #000;
+}
+.score_container span {
+    padding: 0 2px;
+}
