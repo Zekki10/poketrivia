@@ -6,7 +6,7 @@ const pokeContext = createContext()
 const PokeProvider = ({children}) => {
 
     const [ pokeList, setPokeList ] = useState([])
-    const [ loading, setLoading ] = useState(false)
+    const [ loading, setLoading ] = useState(true)
     const [ correctAnswer, setCorrectAnswer ] = useState(random(0,3))
     const [ score, setScore ] = useState(parseInt(sessionStorage.getItem("score")) || 0)
     const [ defeat, setDefeat ] = useState(false)
@@ -16,9 +16,10 @@ const PokeProvider = ({children}) => {
 
     const getPokes = () => {
         setPokeList([])
+        setLoading(false)
         for (let i = 0; i < 4; i++) { 
             getPosts(random(1,900)).then(response => {
-                setLoading(true)
+                
                 if (!pokeList.includes(response)){   
                     setPokeList(pokeList => [...pokeList, response])
                 } else {
@@ -26,6 +27,8 @@ const PokeProvider = ({children}) => {
                 }    
             })
         }
+        setLoading(true)
+        
     }
     function random(min, max) {
         return Math.floor((Math.random() * (max - min + 1)) + min);
@@ -35,6 +38,7 @@ const PokeProvider = ({children}) => {
         
         return( () => {
             getPokes()
+            
         })
     }, [])
 

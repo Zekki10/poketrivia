@@ -1,5 +1,5 @@
 import { Pause } from "../Pause/Pause"
-
+import './Footer.css'
 
 export const Footer = () => {
 
