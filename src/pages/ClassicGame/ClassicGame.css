@@ -1,6 +1,7 @@
 .container_form{
     display: flex;
     position: fixed;
+    top: 0;
     justify-content: center;
     align-items: center;
     background-color: #00000043;
@@ -23,4 +24,7 @@
 .classic_form * {
     margin: 15px 0;
     font-size: 20px;
+}
+.error_msg {
+    color: red;
 }

@@ -48,7 +48,7 @@ export const TriviaOptions = () => {
             getPokes();
             setLeftClass('');
             setRightClass('');
-            if (currentRound !== rounds) {
+            if (currentRound != rounds) {
                 setCurrentRound(currentRound + 1)
             } else {
                 setEnd(true)

@@ -35,14 +35,14 @@ export const SurvivalScore = () => {
                     showForm && 
                     <HighScoreForm score={score}/>
                 }
-                <span>Perdiste!</span>
-                <span>Tu puntaje es:</span>
+                <span>You Lost!</span>
+                <span>Score:</span>
                 <span>{score}</span>
                 <button 
                     className='button_return' 
                     onClick={handleClick}
                 >
-                    <Link className='score_link' to="/">Volver al menú</Link>
+                    <Link className='score_link' to="/">Back to main menu</Link>
                 </button>
             </div>
         </div>
