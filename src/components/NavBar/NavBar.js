@@ -8,7 +8,7 @@ export const NavBar = (props) => {
 
     return(
         <div className="nav_container">
-            <Score />
+            <Score mode={mode} />
             <Rounds mode={mode} />
         </div>
     )

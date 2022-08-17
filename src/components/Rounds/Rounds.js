@@ -9,13 +9,20 @@ export const Rounds = (props) => {
     const { mode } = props
 
     return (
-        <div className="score_container">
-            <span>ROUND: </span>
+        <>
+            { (mode !== 'none') 
+            &&
+            <div className="score_container">
+                <span>ROUND: </span>
 
-            { mode === "classic" ?
-                  <span> {currentRound} / {rounds}</span>
-                : <span> - / ∞</span>
-            }
-        </div>
+                { 
+                mode === "classic" 
+                    ?
+                    <span> {currentRound} / {rounds}</span>
+                    : 
+                    <span> - / ∞</span>
+                }
+            </div>}
+        </>
     )
 }

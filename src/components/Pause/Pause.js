@@ -27,10 +27,10 @@ export const Pause = () => {
                 open && 
                 <div className="pause_menu">
                     <div className="pause_box">
-                        <button onClick={() => setOpen(false)}>
+                        <button className="button_style" onClick={() => setOpen(false)}>
                             Reanudar
                         </button>
-                        <button onClick={handleClick}>
+                        <button className="button_style" onClick={handleClick}>
                             <Link to="/">Menu</Link>
                         </button>
                     </div>

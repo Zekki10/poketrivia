@@ -3,8 +3,7 @@
     background-color: #e93b3b;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #000;
-    padding: 5%;
+    /* padding: 5%; */
     z-index: 100;
 }
 .pause_button {
@@ -41,13 +40,14 @@ button img {
     padding: 10% 5%;
     border-radius: 5px;
     background-color: #fdf7f9;
-    border: solid .5px #000
-}n
-.pause_box button{
-    
+    border: solid .5px #000;
+}
+.button_style {
+    width: 100%;
     border: none;
     margin: 10% 0;
 }
-.pause_box button a {
+.button_style a {
     text-decoration: none;
+    color: #000;
 }

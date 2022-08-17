@@ -3,13 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    margin: 0 auto ;
+    height: 60%;
+    margin: 0 auto 40% ;
+    padding: 10% 0;
     max-width: 450px;
+    /* border: 1px solid #000; */
 }
 .img_poke {
-    width: 250px;
-    height: 250px;
+
+    min-width: 200px;
+    min-height: 200px;
     /* border: 1px solid #000; */
     margin-top: 5%;
     border-radius: 5%;
@@ -24,6 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 60%;
     padding: 0;
 }
 .option_item {
@@ -33,15 +37,15 @@
     border-radius: 2rem;
     background-color: #84d2fc;
     overflow: hidden;
-    margin: 10px 0;
-    min-width: 250px;
+    margin: 3% 0;
+    min-width: 200px;
     cursor: pointer;
 }
 .option_item:hover {
     opacity: .9;
 }
 .answer_button {
-    padding: 5% 2rem;
+    padding: 5% 1%;
     border-radius: 2rem;
     border: solid 3px rgb(255, 255, 255);    
     background: none;

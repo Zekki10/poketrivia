@@ -21,14 +21,14 @@ export const ClassicGame = () => {
     return (
         <>
         {
-            (rounds == 0 || rounds == undefined) && !end
+            (rounds === 0 || rounds === undefined) && !end
             ? 
             <>  
                 <div className='container_form'>
                     <form className='classic_form' onSubmit={handleSubmit}>
                         <span>Numero de rondas: </span>
                         <input name='rounds' type='number'></input>
-                        <button type='submit'>Comenzar</button>
+                        <button type='submit' className='button_style'>Comenzar</button>
                     </form>
                 </div>
                 <Menu />

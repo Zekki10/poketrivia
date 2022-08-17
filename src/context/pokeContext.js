@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+import { getScores } from '../utils/queryScores';
 import { getPosts } from '../utils/pokeapi';
 
 const pokeContext = createContext()
@@ -13,13 +14,13 @@ const PokeProvider = ({children}) => {
     const [ rounds, setRounds ] = useState()
     const [ currentRound, setCurrentRound ] = useState(1)
     const [ end, setEnd ] = useState(false)
+    const [ scoreList, setScoreList ] = useState([])
 
     const getPokes = () => {
         setPokeList([])
         setLoading(false)
         for (let i = 0; i < 4; i++) { 
             getPosts(random(1,900)).then(response => {
-                
                 if (!pokeList.includes(response)){   
                     setPokeList(pokeList => [...pokeList, response])
                 } else {
@@ -35,12 +36,15 @@ const PokeProvider = ({children}) => {
     }
 
     useEffect(() => {
-        
-        return( () => {
-            getPokes()
-            
-        })
+
+        setScoreList([])
+        getScores().then(response => {
+            setScoreList(response)
+      })
+    
     }, [])
+    
+
 
     const data = {
         pokeList,
@@ -59,7 +63,9 @@ const PokeProvider = ({children}) => {
         end,
         setEnd,
         currentRound,
-        setCurrentRound
+        setCurrentRound,
+        scoreList,
+        setScoreList
     }
 
     return(

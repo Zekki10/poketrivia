@@ -2,14 +2,19 @@ import pokeContext from '../../context/pokeContext';
 import { useContext } from 'react';
 import './Score.css'
 
-export const Score = () => {
+export const Score = (props) => {
     const { score } = useContext(pokeContext)
-
+    const { mode } = props
 
     return(
-        <div className="score_container">
-            <span>SCORE: </span>
-            <span>{score}</span>
-        </div>
+        <>
+        { mode !== 'none' &&   
+            <div className="score_container">
+                <span>SCORE: </span>
+                <span>{score}</span>
+            </div>
+        }
+        </>
     )
+        
 }

@@ -2,7 +2,9 @@
     display: flex;
     position: fixed;
     bottom: 0;
+    height: 10vh;
     width: 100%;
+    max-width: 1100px;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */

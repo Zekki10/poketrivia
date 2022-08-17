@@ -1,0 +1,31 @@
+.highScore_container {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 3%;
+    border: 3px solid #ffffff;
+    outline: 1px solid #000;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #84d2fc ;
+}
+.highScore_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2%;
+}
+.highScore_form input {
+    margin: 2% 0;
+}
+.highScore_button {
+    max-width: 150px;
+}
+.high_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
