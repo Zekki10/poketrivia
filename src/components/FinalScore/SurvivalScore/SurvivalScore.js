@@ -6,6 +6,7 @@ import '../Scores.css'
 import { HighScoreForm } from '../../HighScoreForm/HighScoreForm';
 
 export const SurvivalScore = () => {
+
     const { score, setScore, setDefeat, scoreList } = useContext(pokeContext) 
     const handleClick = () => {
         setScore(0)
@@ -25,7 +26,7 @@ export const SurvivalScore = () => {
     }
     const [ showForm, setShowForm ] = useState((scoreList.length < 10 || ifMaxScore() ) ? true : false)
 
-    
+
 
     return (
         <div className='final_score_container'>

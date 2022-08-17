@@ -14,6 +14,7 @@ const PokeProvider = ({children}) => {
     const [ rounds, setRounds ] = useState()
     const [ currentRound, setCurrentRound ] = useState(1)
     const [ end, setEnd ] = useState(false)
+    const [ topScore, setTopScore ] = useState([])
     const [ scoreList, setScoreList ] = useState([])
 
     const getPokes = () => {
@@ -64,6 +65,8 @@ const PokeProvider = ({children}) => {
         setEnd,
         currentRound,
         setCurrentRound,
+        topScore,
+        setTopScore,
         scoreList,
         setScoreList
     }

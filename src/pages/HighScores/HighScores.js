@@ -32,7 +32,6 @@ export const HighScores = () => {
                     {
                         scoreList.map((player, index) => {
                             scoreList.sort(function(a, b){return b.score - a.score});
-                            console.log('indice', player, index)
                             return( 
                                 index < 10 &&
                                 <li className="highScore_item player_data" key={index}>
