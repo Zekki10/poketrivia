@@ -1,0 +1,7 @@
+{
+    "survival": {
+        "lost":"You Lost!",
+        "score":"Score:",
+        "back": "Back to main menu"
+    }
+}

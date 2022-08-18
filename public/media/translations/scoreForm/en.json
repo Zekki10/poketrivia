@@ -1,0 +1,9 @@
+{
+    "scoreForm": {
+        "title":"High Score!",
+        "name":"Enter your name:",
+        "exit":"Exit",
+        "error_required":"The name is required",
+        "error_length":"Your name must be between 5 and 10 characters long"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "classicForm":{
+        "number":"Numero de rondas: ",
+        "error_required":"El numero de rondas es obligatorio",
+        "error_length":"Debe ingresar un número entre 5 y 151",
+        "start":"Comenzar!"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "classicForm":{
+        "number":"Number of rounds: ",
+        "error_required":"The number of rounds is required",
+        "error_length":"The rounds must be 5-151 characters in length",
+        "start":"Start!"
+    }
+}

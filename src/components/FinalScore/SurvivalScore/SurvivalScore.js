@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import pokeContext from '../../../context/pokeContext';
-
+import { useTranslation } from 'react-i18next'
 import '../Scores.css'
 import { HighScoreForm } from '../../HighScoreForm/HighScoreForm';
 
 export const SurvivalScore = () => {
-
+    const { t } = useTranslation(['survivalScore']);
     const { score, setScore, setDefeat, scoreList } = useContext(pokeContext) 
     const handleClick = () => {
         setScore(0)
@@ -35,14 +35,14 @@ export const SurvivalScore = () => {
                     showForm && 
                     <HighScoreForm score={score}/>
                 }
-                <span>You Lost!</span>
-                <span>Score:</span>
+                <span>{t('survival.lost')}</span>
+                <span>{t('survival.score')}</span>
                 <span>{score}</span>
                 <button 
                     className='button_return' 
                     onClick={handleClick}
                 >
-                    <Link className='score_link' to="/">Back to main menu</Link>
+                    <Link className='score_link' to="/">{t('survival.back')}</Link>
                 </button>
             </div>
         </div>

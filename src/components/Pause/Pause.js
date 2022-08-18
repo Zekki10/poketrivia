@@ -2,10 +2,11 @@ import { useState } from "react"
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import pokeContext from "../../context/pokeContext";
+import { useTranslation } from 'react-i18next'
 import './Pause.css'
 
 export const Pause = () => {
-
+    const { t } = useTranslation(['pause']);
     const [ open, setOpen ] = useState(false)
     const { setScore, setDefeat, setRounds, setCurrentRound } = useContext(pokeContext)
 
@@ -28,10 +29,10 @@ export const Pause = () => {
                 <div className="pause_menu">
                     <div className="pause_box">
                         <button className="button_style" onClick={() => setOpen(false)}>
-                            Resume
+                            {t('pause.resume')}
                         </button>
                         <button className="button_style" onClick={handleClick}>
-                            <Link to="/">Menu</Link>
+                            <Link to="/">{t('pause.menu')}</Link>
                         </button>
                     </div>
                 </div>

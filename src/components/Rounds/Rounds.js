@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import pokeContext from '../../context/pokeContext'
-
+import { useTranslation } from 'react-i18next'
 
 
 export const Rounds = (props) => {
-    
+    const { t } = useTranslation(['navbar']);
     const { rounds, currentRound } = useContext(pokeContext)
     const { mode } = props
 
@@ -13,7 +13,7 @@ export const Rounds = (props) => {
             { (mode !== 'none') 
             &&
             <div className="score_container">
-                <span>ROUND: </span>
+                <span>{t("navbar.round")}: </span>
 
                 { 
                 mode === "classic" 

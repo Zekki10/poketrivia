@@ -1,12 +1,12 @@
 .nav_container {
     background-image: url('../../../public/media/img/rotom_background.png');
     background-size:contain;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-position: center top;
     display: flex;
     width: 100%;
-    padding: 5% 0 15%;
+    padding: 5% 0 17%;
     align-items: flex-start;
     justify-content: space-around;
 }
